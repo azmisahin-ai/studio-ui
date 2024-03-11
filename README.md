@@ -1,5 +1,5 @@
 # Introduction
-This repository provides a standardized template for Flutter and Dart Docker projects that is compatible with agile processes.
+User interface to observe engineering work outputs Machine learning and artificial learning project with GPU support.
 
 🔖 Version: 0.2.1
 
