@@ -1,5 +1,5 @@
-name: app
-description: "template for Flutter and Dart Docker projects"
+name: studio_ui
+description: "User interface to observe engineering work outputs"
 publish_to: "Application"
 version: 0.1.0
 
