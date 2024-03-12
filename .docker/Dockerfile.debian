@@ -149,7 +149,7 @@ COPY . .
 # install development dependencies
 
 # switch to application folder
-WORKDIR $PROJECT_FOLDER/app
+WORKDIR $PROJECT_FOLDER/client
 
 # Install dependencies if necessary
 RUN flutter pub get
@@ -173,7 +173,7 @@ RUN echo "$APP_ENV stage - PROJECT_FOLDER: $PROJECT_FOLDER"
 
 # Copy compiled files to server
 COPY --from=test-build /workspaces/template/.docker/test/command.sh /.docker/test/command.sh
-COPY --from=test-build /workspaces/template/app/build/web /usr/share/nginx/html
+COPY --from=test-build /workspaces/template/client/build/web /usr/share/nginx/html
 
 
 # Run tests
@@ -197,7 +197,7 @@ RUN echo "$APP_ENV stage - PROJECT_FOLDER: $PROJECT_FOLDER"
 
 # Copy compiled files to server
 COPY --from=production-build /workspaces/template/.docker/command.sh /.docker/command.sh
-COPY --from=production-build /workspaces/template/app/build/web /usr/share/nginx/html
+COPY --from=production-build /workspaces/template/client/build/web /usr/share/nginx/html
 
 # Application run
 # It allows the application to start automatically.
