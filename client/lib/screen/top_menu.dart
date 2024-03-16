@@ -11,7 +11,7 @@ class TopMenu extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text('Studio'),
+      title: const Text('Client'),
       actions: [
         IconButton(
           icon: const Icon(Icons.menu),

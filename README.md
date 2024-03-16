@@ -1,5 +1,5 @@
 # Introduction
-User interface to observe engineering work outputs Machine learning and artificial learning project with GPU support.
+User interface to observe engineering work outputs Machine learning and artificial learning project with GPU support
 
 🔖 Version: 0.2.1
 
